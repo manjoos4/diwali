@@ -59,7 +59,7 @@ app.get('/mailer', function(req,res){
         from: item.name,
         to: item.email,
         subject: 'Diwali Wishes',
-        text: item.name+' wishes you a happy diwali!!! Click the following link'
+        text: item.name+' wishes you a happy diwali!!! Click the following link'+ 'https://manjudiwali.herokuapp.com/'
       };
       
       transporter.sendMail(mailOptions, function(error, info){
